@@ -1,0 +1,66 @@
+body{
+    background-color: #313340;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: solid;
+    border-radius: 20px;
+    height: 500px;
+}
+.playListContainer{
+    height:250px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.trackItem{
+    color: rgb(27 , 24 , 24);
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px 0 ;
+    cursor:pointer;
+}
+.currentAndTotalTime{
+    margin-bottom: 10px;
+    color: black;
+}
+.controls {
+    font-size: 30px;
+    color: #000;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+.currentPlayingMusic{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.durationSlider{
+    display: block;
+    background-color: black;
+    cursor: pointer; 
+}
+.currentProgress{
+   /* background-color: black;*/
+    width:100%;
+    height: 20px;;
+}
+.currentProgressBar{
+    display: flex;
+    height:1px;
+    position: relative;
+    top: -20px;
+    margin-bottom:10px;
+     
+}

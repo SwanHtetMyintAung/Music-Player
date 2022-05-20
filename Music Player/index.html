@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contain">
+            <div class="playListContainer overflow-auto"></div>
+            <audio class="audioTag" src=""></audio>
+            <div class="currentPlayingMusic"></div>
+            <div class="currentAndTotalTime">00:00 / 00:00</div>
+            <div class="currentProgress"></div>
+                <div class="currentProgressBar">
+                    <input type="range" value="0" min="0" max="100" id="durationSlider">
+                </div>
+            
+            <div class="musicPlayer">
+                <span id="prev" class="fas fa-step-backward controls previousButton" onclick="prevBtn()"></span>
+                <span id="play" class="fas fa-play-circle  controls playButton" onclick="playBtn()"></span>
+                <span id="pause" class="far fa-pause-circle d-none controls pauseButton" onclick="pauseBtn()"></span>
+                <span id="next" class="fas fa-step-forward controls nextButton" onclick="nextBtn()" ></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
